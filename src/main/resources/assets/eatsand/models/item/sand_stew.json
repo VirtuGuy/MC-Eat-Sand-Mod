@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "eatsand:item/sand_stew"
+  }
+}

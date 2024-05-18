@@ -1,0 +1,7 @@
+{
+  "death.attack.ate_sharp_sand": "%1$s ate hard and really sharp sand",
+  "death.attack.ate_soul_sand": "%1$s ate soul sand",
+  "itemGroup.eatsand.foods_group": "Eat Sand Items",
+  "item.eatsand.sand_stew": "Sand Stew",
+  "item.eatsand.sand_stew.tooltip": "It's very good!"
+}

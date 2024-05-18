@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "eatsand",
+	"version": "${version}",
+	"name": "Eat Sand",
+	"description": "A Minecraft mod where you just eat sand.",
+	"authors": [
+		"VirtuGuy"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": ""
+	},
+	"license": "MIT",
+	"icon": "assets/eatsand/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.virtuguy.EatSand"
+		]
+	},
+	"mixins": [
+      "eatsand.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.22",
+		"minecraft": "~1.20.2",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
