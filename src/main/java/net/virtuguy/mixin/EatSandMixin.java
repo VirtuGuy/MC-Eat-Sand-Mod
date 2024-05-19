@@ -5,9 +5,7 @@ import net.minecraft.sound.SoundEvents;
 import net.virtuguy.EatSandDamageTypes;
 import net.minecraft.block.*;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.sound.SoundEvent;
 import net.minecraft.util.ActionResult;
-import net.minecraft.util.Identifier;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
@@ -50,11 +48,9 @@ public class EatSandMixin {
 		blocksAllowed.add(Blocks.SOUL_SAND);
 
 		// A list of blocks that hurt when you eat them
-		ArrayList<Block> hardBlocks = new ArrayList<>();
 
-		// Adds every block allowed into the list, but removes some of them after
-		for (int i = 0; i < blocksAllowed.size(); i++)
-			hardBlocks.add(blocksAllowed.get(i));
+        // Adds every block allowed into the list, but removes some of them after
+        ArrayList<Block> hardBlocks = new ArrayList<>(blocksAllowed);
 
 		// Removes the blocks that don't hurt
 		hardBlocks.remove(Blocks.SAND);
